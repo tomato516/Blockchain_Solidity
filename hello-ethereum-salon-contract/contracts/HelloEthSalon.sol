@@ -1,12 +1,13 @@
-pragma solidity ^0.4.4
+pragma solidity ^0.4.1;
 
 contract HelloEthSalon {
   string message = "Hello Ethereum Salon!";
 
-  function HelloEthSalon(){
-    //constructor
+  constructor() public {
+
   }
-  public GetMessage() returns (string){
+
+  public GetMessage() public returns (string memory){
     return message;
   }
 }
